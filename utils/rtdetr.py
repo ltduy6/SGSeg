@@ -99,7 +99,7 @@ class RTDETR(nn.Module):
             print(f"Downloaded and saved state dict to {model_path}")
         else:
             # Load the state dict from the local file
-            state_dict = torch.load(model_path)
+            state_dict = torch.load(model_path, map_location=torch.device('cpu'), weights_only=False)
             print(f"Loaded state dict from {model_path}")
 
         loader = WeightLoader()
