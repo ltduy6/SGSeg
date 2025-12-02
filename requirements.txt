@@ -1,10 +1,9 @@
-torch
+torch  
 torchvision
-pytorch_lightning==1.9.0
-torchmetrics==0.10.3
+pytorch_lightning==1.9.0  
+torchmetrics==0.10.3  
 transformers
-ultralytics==8.1.15
-monai==1.0.1
-pandas
-einops
+monai==1.0.1  
+pandas  
+einops  
 nltk==3.8.1
