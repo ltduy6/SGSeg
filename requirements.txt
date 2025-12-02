@@ -1,7 +1,7 @@
 torch==2.0.1
 torchaudio==2.0.2
-pytorch_lightning==2.9.0
-torchmetrics==0.11.4
+pytorch_lightning==1.9.0
+torchmetrics==0.10.3
 transformers==4.35.0
 ultralytics==8.1.15
 numpy==1.26.3
