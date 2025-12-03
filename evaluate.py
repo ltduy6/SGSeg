@@ -53,7 +53,8 @@ if __name__ == '__main__':
     # Load the model checkpoint
     checkpoint = torch.load(
         './save_model/sgseg{}.ckpt'.format(args.v),
-        map_location=device
+        map_location=device,
+        weights_only=False
     )["state_dict"]
     model.load_state_dict(checkpoint, strict=True)
     
