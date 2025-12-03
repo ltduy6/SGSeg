@@ -389,7 +389,7 @@ class WeightLoader:
         assert tgt is not None
         
         if type(src) == str:
-            src = torch.load(src)["model"].model
+            src = torch.load(src, weights_only=False)["model"].model
         elif type(src) == dict:
             src = src["model"].model
         tgt_weights = CustomModelWeights(tgt)
